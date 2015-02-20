@@ -85,6 +85,26 @@ myFavoriteColors.removeAtIndex(0)
 myFavoriteColors
 
 let boros = ["Manhattan", "Staten Island", "Brooklyn", "Bronx", "Queens"]
+
+// traditional for-loop
+
+// Take note that in addition to incrementing by using the ++ operator,
+// You can also decrement using the -- operator, such as i--
+// Just make sure to set up your initial iterator and condition correctly!
+
+for var i = 0; i < boros.count; i++ {
+    
+    println("The index of \(boros[i]) is \(i)")
+    
+}
+
+// for-in loop
+
+for boro in boros {
+    
+    println("Welcome to \(boro)")
+}
+
 var boroCount = 0
 
 var i = 10
