@@ -155,14 +155,14 @@ for i in 1...100 {
 
 var z = 1
 
-
 if z == 1 {
     println("its 1")
 } else {
     println("its not one")
 }
 
-z == 1 ? println("its 1") : println("its not one")
+println(z == 1 ? "its 1" : "its not one")
+
 
 
 func sayHello() {
