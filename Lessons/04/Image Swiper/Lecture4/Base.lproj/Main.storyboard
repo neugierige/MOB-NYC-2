@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lecture4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROE-mZ-VFa">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xI-x9-t2n"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Af-SV-53j">
+                                <rect key="frame" x="16" y="58" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6b8-K9-3k6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xDi-jX-NLe">
+                                <rect key="frame" x="16" y="87" width="568" height="224"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ3-Jx-2WU" userLabel="Rating">
+                                <rect key="frame" x="202" y="319" width="197" height="21"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="Hcv-cr-1ta"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjO-bc-xcA" userLabel="File Name">
+                                <rect key="frame" x="202" y="366" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="kZ3-Jx-2WU" firstAttribute="top" secondItem="xDi-jX-NLe" secondAttribute="bottom" constant="8" symbolic="YES" id="13U-cG-LsD"/>
+                            <constraint firstItem="OjO-bc-xcA" firstAttribute="top" secondItem="kZ3-Jx-2WU" secondAttribute="bottom" constant="26" id="55a-NA-I2m"/>
+                            <constraint firstItem="xDi-jX-NLe" firstAttribute="leading" secondItem="6Af-SV-53j" secondAttribute="leading" id="6M9-Dw-5SQ"/>
+                            <constraint firstItem="kZ3-Jx-2WU" firstAttribute="centerX" secondItem="xDi-jX-NLe" secondAttribute="centerX" id="C6o-GP-iKQ"/>
+                            <constraint firstItem="ROE-mZ-VFa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CIS-vy-3as"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kZ3-Jx-2WU" secondAttribute="bottom" constant="260" id="DNX-oM-TMp"/>
+                            <constraint firstItem="kZ3-Jx-2WU" firstAttribute="leading" secondItem="OjO-bc-xcA" secondAttribute="leading" id="GIW-FG-vLE"/>
+                            <constraint firstItem="6Af-SV-53j" firstAttribute="top" secondItem="ROE-mZ-VFa" secondAttribute="bottom" constant="8" symbolic="YES" id="JMt-sF-VUm"/>
+                            <constraint firstItem="kZ3-Jx-2WU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U6x-RF-tXf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xDi-jX-NLe" secondAttribute="bottom" constant="289" id="h40-oW-Bq5"/>
+                            <constraint firstItem="xDi-jX-NLe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ky7-1b-bl6"/>
+                            <constraint firstItem="6Af-SV-53j" firstAttribute="leading" secondItem="ROE-mZ-VFa" secondAttribute="leading" id="mK1-TR-1O2"/>
+                            <constraint firstItem="xDi-jX-NLe" firstAttribute="top" secondItem="6Af-SV-53j" secondAttribute="bottom" constant="8" symbolic="YES" id="yLf-2u-c3z"/>
+                            <constraint firstItem="kZ3-Jx-2WU" firstAttribute="centerX" secondItem="xDi-jX-NLe" secondAttribute="centerX" id="zVM-W4-KPH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kwX-Nh-hNc" appends="YES" id="sEL-cX-Ck6"/>
+                            <outletCollection property="gestureRecognizers" destination="3pH-Bh-cFv" appends="YES" id="MV3-YD-qtD"/>
+                            <outletCollection property="gestureRecognizers" destination="6js-tE-xwo" appends="YES" id="alM-vd-VA5"/>
+                            <outletCollection property="gestureRecognizers" destination="0Wg-td-yHR" appends="YES" id="wAE-M0-YFQ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="filenameField" destination="OjO-bc-xcA" id="WAo-nU-sKK"/>
+                        <outlet property="imageView" destination="xDi-jX-NLe" id="ljB-ND-na0"/>
+                        <outlet property="labelField" destination="6Af-SV-53j" id="dxs-Ie-TPY"/>
+                        <outlet property="ratingLabel" destination="kZ3-Jx-2WU" id="d3p-YV-z6i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="kwX-Nh-hNc" userLabel="swipe up">
+                    <connections>
+                        <action selector="swipedUp:" destination="BYZ-38-t0r" id="xgK-Gj-4OU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="3pH-Bh-cFv" userLabel="swipe right">
+                    <connections>
+                        <action selector="swipedRight:" destination="BYZ-38-t0r" id="I63-80-cZq"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="6js-tE-xwo" userLabel="swipe left">
+                    <connections>
+                        <action selector="swipedLeft:" destination="BYZ-38-t0r" id="NZA-ar-K4a"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="0Wg-td-yHR">
+                    <connections>
+                        <action selector="longPressed:" destination="BYZ-38-t0r" id="pAZ-c0-mUa"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
