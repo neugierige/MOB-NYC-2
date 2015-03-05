@@ -14,11 +14,11 @@
 		<string>https://github.com/ga-students/MOB-NYC-2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PhotoSwipr2/PhotoSwipr2.xcodeproj</string>
+	<string>Lessons/06/PhotoSwipr2/PhotoSwipr2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>586291DA112D60CD4120B69542ACC073F2A42336</key>
-		<string>../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/ga-students/MOB-NYC-2.git</string>
