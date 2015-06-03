@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageOverlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="someimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="QB7-ML-gws">
+                                <rect key="frame" x="16" y="20" width="568" height="420"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.53000000000000003" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZJo-y1-1Zj" appends="YES" id="qEp-S1-Fwa"/>
+                                    <outletCollection property="gestureRecognizers" destination="NDN-8i-0aW" appends="YES" id="e99-tn-ITh"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnq-FV-rSl">
+                                <rect key="frame" x="285" y="448" width="30" height="30"/>
+                                <state key="normal" title="Two">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wxc-yj-ueM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAe-Ug-xff">
+                                <rect key="frame" x="223" y="448" width="30" height="30"/>
+                                <state key="normal" title="One">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBi-dQ-HRd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tm-Ku-8gC">
+                                <rect key="frame" x="346" y="448" width="39" height="30"/>
+                                <state key="normal" title="Three">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DtG-uL-zHw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QB7-ML-gws" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8r3-Rf-ZCR"/>
+                            <constraint firstItem="QB7-ML-gws" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CF2-Yu-bNr"/>
+                            <constraint firstItem="Rnq-FV-rSl" firstAttribute="centerX" secondItem="QB7-ML-gws" secondAttribute="centerX" id="G6x-bc-ntf"/>
+                            <constraint firstItem="6Tm-Ku-8gC" firstAttribute="top" secondItem="Rnq-FV-rSl" secondAttribute="top" id="Ssm-bc-vIA"/>
+                            <constraint firstItem="Rnq-FV-rSl" firstAttribute="top" secondItem="QB7-ML-gws" secondAttribute="bottom" constant="8" symbolic="YES" id="Wwu-qz-jPi"/>
+                            <constraint firstItem="6Tm-Ku-8gC" firstAttribute="leading" secondItem="Rnq-FV-rSl" secondAttribute="trailing" constant="31" id="bTv-k5-8aR"/>
+                            <constraint firstItem="iAe-Ug-xff" firstAttribute="top" secondItem="Rnq-FV-rSl" secondAttribute="top" id="bea-4S-pZT"/>
+                            <constraint firstItem="QB7-ML-gws" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="cD1-ko-sFE"/>
+                            <constraint firstItem="6Tm-Ku-8gC" firstAttribute="bottom" secondItem="Rnq-FV-rSl" secondAttribute="bottom" id="esl-ge-JPu"/>
+                            <constraint firstItem="Rnq-FV-rSl" firstAttribute="leading" secondItem="iAe-Ug-xff" secondAttribute="trailing" constant="32" id="haO-EX-lsm"/>
+                            <constraint firstItem="iAe-Ug-xff" firstAttribute="bottom" secondItem="Rnq-FV-rSl" secondAttribute="bottom" id="jEi-YK-QDF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QB7-ML-gws" secondAttribute="trailing" id="l5M-tF-HUU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="QB7-ML-gws" id="Psh-o1-EY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZJo-y1-1Zj">
+                    <connections>
+                        <action selector="tapped:" destination="BYZ-38-t0r" id="PUj-Tc-I1p"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="NDN-8i-0aW">
+                    <connections>
+                        <action selector="dragged:" destination="BYZ-38-t0r" id="O7a-Xz-kw4"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="someimage.png" width="327" height="681"/>
+    </resources>
+</document>
